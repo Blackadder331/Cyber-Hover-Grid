@@ -101,8 +101,8 @@ section {
   display: grid;
   position: relative;
   width: min-content;
-  margin: 0rem 0 10vw 0;
-  padding: 7rem 10vh 3vh 3vh;
+  margin: 0;
+  padding: 7rem 3vh 3vh 3vh;
   min-width: 100vw;
   grid-auto-rows: auto 1fr;
   grid-template-columns: repeat(2, 1fr);
@@ -207,7 +207,7 @@ section {
   );
 }
 .card__box-number {
-  font-size: clamp(2rem, 10vw, 3.5rem);
+  font-size: clamp(2rem, 9vw, 10rem);
   font-family: tt-autonomous, -apple-system, BlinkMacSystemFont, Segoe UI,
     Helvetica, Arial, sans-serif;
   font-weight: 200;
@@ -219,13 +219,13 @@ section {
 }
 .card__box-category,
 .card__box-tags {
-  font-size: 0.85rem;
+  font-size: 1.5rem;
   font-weight: 600;
   margin-top: auto;
 }
 .card__box-tags {
   grid-area: tags;
-  font-size: 0.65rem;
+  font-size: 0.9rem;
 }
 .card__box-category {
   grid-area: category;
@@ -267,8 +267,8 @@ section {
 }
 @media screen and (min-width: 1300px) {
   .grid {
-    grid-template-columns: repeat(3, 500px);
-    grid-template-rows: 500px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
   }
 }
 @media screen and (max-width: 900px) {
