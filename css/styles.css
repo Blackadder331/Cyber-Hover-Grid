@@ -273,6 +273,22 @@ section {
   }
 }
 @media screen and (max-width: 900px) {
+  body {
+    background-image: linear-gradient(
+      83deg,
+      #000,
+      #000,
+      #000,
+      #000,
+      #000,
+      #000,
+      #000,
+      #124540,
+      #05a16d,
+      #59fbd0,
+      #00ffae
+    );
+  }
   .grid {
     width: 100%;
     padding: 0 1rem 0 1rem;
