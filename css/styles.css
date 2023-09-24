@@ -366,12 +366,11 @@ section {
   }
 }
 
-.mobile {display: none;}
-
+.mobile {
+  display: none;
+}
 
 /* Media queries */
-
-
 
 @media screen and (min-width: 1300px) {
   .grid {
@@ -390,6 +389,11 @@ section {
   }
 }
 @media screen and (max-width: 600px) {
+  body::before {
+    background: #0c101b;
+    filter: url(#noiseFilter);
+    height: 800%;
+  }
   /* body {
     background-image: linear-gradient(
       83deg,
@@ -455,9 +459,12 @@ section {
     margin-right: 4rem;
   }
 
-  .desktop {display: none;}
+  .desktop {
+    display: none;
+  }
 
-  .mobile {display: block;
+  .mobile {
+    display: block;
   }
   .grid {
     opacity: 0;
